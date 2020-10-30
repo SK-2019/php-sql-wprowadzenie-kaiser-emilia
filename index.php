@@ -5,6 +5,7 @@ $sql = ("SELECT * FROM pracownicy");
 echo("<h2>".$sql."</h2>");
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query($sql);
+include("connect.php");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
