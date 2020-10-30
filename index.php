@@ -69,8 +69,8 @@ $result=$conn->query($sql);
         echo("</table>");
 
 echo("<h2>Zadanie 5</h2>");
-echo("<h2>".$sql."</h2>");
 $sql = ("SELECT * FROM pracownicy where (imie like '%a') and (dzial = 1)");
+echo("<h2>".$sql."</h2>");
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query($sql);
         echo("<table border=1>");
