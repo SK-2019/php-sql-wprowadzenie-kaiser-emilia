@@ -52,7 +52,7 @@ $result=$conn->query($sql);
         echo("</table>");
 
 echo("<h2>Zadanie 4</h2>");
-$sql = ("SELECT * FROM pracownicy where imie like '%a' and dzial = 2 or dzial =3");
+$sql = ("SELECT * FROM pracownicy where (imie like '%a') and (dzial = 2 or dzial =3)");
 echo("<h2>".$sql."</h2>");
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query($sql);
@@ -70,7 +70,7 @@ $result=$conn->query($sql);
 
 echo("<h2>Zadanie 5</h2>");
 echo("<h2>".$sql."</h2>");
-$sql = ("SELECT * FROM pracownicy where imie like '%a' and dzial = 1");
+$sql = ("SELECT * FROM pracownicy where (imie like '%a') and (dzial = 1)");
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query($sql);
         echo("<table border=1>");
