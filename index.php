@@ -31,7 +31,7 @@ $result=$conn->query('SELECT * FROM pracownicy where imie like "%a"');
         echo("</table>");
 
 echo("<h2>Zadanie 3</h2>");
-echo($sql);
+echo("sql");
 $sql = "SELECT * FROM pracownicy where imie like "%a" and dzial = 2";
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query($sql);
