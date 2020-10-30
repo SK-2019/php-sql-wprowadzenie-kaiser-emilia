@@ -1,6 +1,7 @@
 <?php
 echo("<h1>Emilia Kaiser</h1>");
 echo("<h2>Zadanie 1</h2>");
+echo("<li>".$sql);
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query('SELECT * FROM pracownicy');
         echo("<table border=1>");
