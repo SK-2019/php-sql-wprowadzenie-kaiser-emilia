@@ -20,7 +20,7 @@ require("connect.php");
         echo("</table>");
 }
 
-worker (SELECT * from pracownicy);
+worker ("SELECT * from pracownicy");
 
 echo("<h2>Zadanie 2</h2>");
 $sql = ("SELECT * FROM pracownicy where imie like '%a'");
