@@ -1,9 +1,9 @@
 <?php
 echo("<h1>Emilia Kaiser</h1>");
 echo("<h2>Zadanie 1</h2>");
-//$sql = ("SELECT * FROM pracownicy");
-//echo("<h2>".$sql."</h2>");
-function worker($sql){
+$sql = ("SELECT * FROM pracownicy");
+echo("<h2>".$sql."</h2>");
+
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query($sql);
 require("connect.php");
@@ -18,9 +18,8 @@ require("connect.php");
                 echo("</tr>");
             }
         echo("</table>");
-}
 
-worker ("SELECT * from pracownicy");
+
 
 echo("<h2>Zadanie 2</h2>");
 $sql = ("SELECT * FROM pracownicy where imie like '%a'");
