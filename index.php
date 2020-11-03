@@ -3,10 +3,9 @@ echo("<h1>Emilia Kaiser</h1>");
 echo("<h2>Zadanie 1</h2>");
 $sql = ("SELECT * FROM pracownicy");
 echo("<h2>".$sql."</h2>");
-
 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
 $result=$conn->query($sql);
-require("connect.php");
+include("connect.php");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -18,9 +17,6 @@ require("connect.php");
                 echo("</tr>");
             }
         echo("</table>");
-
-
-
 echo("<h2>Zadanie 2</h2>");
 $sql = ("SELECT * FROM pracownicy where imie like '%a'");
 echo("<h2>".$sql."</h2>");
@@ -37,7 +33,6 @@ $result=$conn->query($sql);
                 echo("</tr>");
             }
         echo("</table>");
-
 echo("<h2>Zadanie 3</h2>");
 $sql = ("SELECT * FROM pracownicy where (imie like '%a') and (dzial = 2)");
 echo("<h2>".$sql."</h2>");
@@ -54,7 +49,6 @@ $result=$conn->query($sql);
                 echo("</tr>");
             }
         echo("</table>");
-
 echo("<h2>Zadanie 4</h2>");
 $sql = ("SELECT * FROM pracownicy where (imie like '%a') and (dzial = 2 or dzial =3)");
 echo("<h2>".$sql."</h2>");
@@ -71,7 +65,6 @@ $result=$conn->query($sql);
                 echo("</tr>");
             }
         echo("</table>");
-
 echo("<h2>Zadanie 5</h2>");
 $sql = ("SELECT * FROM pracownicy where (imie like '%a') and (dzial = 1)");
 echo("<h2>".$sql."</h2>");
