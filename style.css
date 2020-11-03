@@ -11,3 +11,7 @@ h2 {
   color: teal;
   margin-left: 20px;
 }
+
+p { 
+  font-style: italic; 
+}
