@@ -114,6 +114,23 @@
                                    echo("</tr>");
                                     }
                          echo("</table>");
+        
+                   echo("<h2>Zadanie 6</h2>");
+                  $sql = ("SELECT count(imie) as liczba_kobiet FROM pracownicy, organizacja where dzial=id_org and imie like '%a'");
+                  echo("<h2>".$sql."</h2>");
+                  $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                  $result=$conn->query($sql);
+                         echo("<table border=1>");
+                         echo("<th>liczba_kobiet</th>");
+                        
+                         while($row=$result->fetch_assoc()) {
+                                  echo("<tr>");
+                                        echo("<td>".$row["liczba_kobiet"]."</td>");
+                                   echo("</tr>");
+                                    }
+                         echo("</table>");      
+        
+
 
         ?>
 </html>
