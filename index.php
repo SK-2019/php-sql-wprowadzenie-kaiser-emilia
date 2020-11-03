@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
 echo("<h1>Emilia Kaiser</h1>");
 echo("<h2>Zadanie 1</h2>");
@@ -82,3 +88,5 @@ $result=$conn->query($sql);
             }
         echo("</table>");
 ?>
+</body>
+</html>
