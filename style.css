@@ -22,8 +22,7 @@ table{
 }
 
 th{
-    height: 25px;
-    text-align: center;
+
     background-color:#ffcc99;
 
 tr:nth-child(even){background-color:#00cccc;}
