@@ -1,5 +1,5 @@
 body {
-  background-color: #ffcc99;
+  background-color: #ffcccc;
 }
 
 h1 {
@@ -20,6 +20,11 @@ h2 {
 table{
     background-color:#cc99ff;
 }
+
+th{
+    height: 25px;
+    text-align: center;
+    background-color:#ffcc99;
 
 tr:nth-child(even){background-color:#00cccc;}
 tr:hover{background-color:#ffcc99;}
