@@ -18,10 +18,10 @@ h2 {
 }
 
 table{
-    background-color:#666633;
+    background-color:#00b386;
 }
 
-tr:nth-child(even){background-color:#cccc00;}
+tr:nth-child(even){background-color:#00cccc;}
 tr:hover{background-color:#ffcc99;}
 
 .obraz {
