@@ -24,6 +24,7 @@ table{
 th{
 
     background-color:#ffcc99;
+}
 
 tr:nth-child(even){background-color:#00cccc;}
 tr:hover{background-color:#ffcc99;}
