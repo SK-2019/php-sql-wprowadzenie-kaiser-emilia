@@ -3,7 +3,8 @@ body {
 }
 
 h1 {
-  color: navy;
+  text-shadow: 25px 15px 3px black;
+  color: white;
   margin-left: 20px;
 }
 
