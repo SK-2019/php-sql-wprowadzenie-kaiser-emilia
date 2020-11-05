@@ -18,7 +18,7 @@ h2 {
 }
 
 table{
-    background-color:#00b386;
+    background-color:#cc99ff;
 }
 
 tr:nth-child(even){background-color:#00cccc;}
@@ -31,3 +31,5 @@ tr:hover{background-color:#ffcc99;}
     left: 40%;
     position: absolute;
 }
+// #cc99ff fioletowy
+// #00b386 niebieski
