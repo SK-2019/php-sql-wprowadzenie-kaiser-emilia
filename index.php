@@ -9,6 +9,7 @@
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>
         <a href="pracownicy.php">Pracownicy</a>
         <a href="pracownicyiorganizacja.php">Prac i Org</a>
+        <a href="agregat.php">Funkcje Agregujace</a>
 
 </div>
         <?php
