@@ -3,6 +3,14 @@
         <head>
         <link rel="stylesheet" href="style.css">
         </head>
+                    <div class="nav">
+        linki
+        <a href="https://yma.herokuapp.com/">Strona główna</a>
+        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>
+        <a href="pracownicy.php">Pracownicy</a>
+        <a href="pracownicyiorganizacja.php">Prac i Org</a>
+
+</div>
           <?php
                 echo("<h1>Pracownicy i Organizacja</h1>");
                 echo("<h2>Zadanie 1</h2>");
