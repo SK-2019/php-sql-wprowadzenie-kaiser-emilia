@@ -258,7 +258,22 @@
   
   
   
-  
+                    echo("<h2>Zadanie 16</h2>");
+                $sql = ("SELECT count(imie) as ilosc, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) group by dzial having count(imie)>2");
+                echo("<h2>".$sql."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>ilosc</th>");
+                        echo("<th>nazwa_dzial</th>");
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["ilosc"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                                echo("</tr>");
+                            }
+
   
   
           ?>
