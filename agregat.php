@@ -159,19 +159,19 @@
 
 
                 echo("<h2>Zadanie 9</h2>");
-                $sql = ("SELECT imie, sum(zarobki) as suma_zarobki, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial");
+                $sql = ("SELECT nazwa_dzial, imie, sum(zarobki) as suma_zarobki FROM pracownicy, organizacja where dzial=id_org group by dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
                 include("connect.php");
                         echo("<table border=1>");
+                        echo("<th>nazwa_dzial</th>");
                         echo("<th>imie</th>");
                         echo("<th>suma_zarobki</th>");
-                        echo("<th>nazwa_dzial</th>");
 
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
-                                    echo("<td>".$row["imie"]."</td><td>".$row["suma_zarobki"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["imie"]."</td><td>".$row["suma_zarobki"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
