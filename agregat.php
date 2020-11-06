@@ -159,7 +159,7 @@
 
 
                 echo("<h2>Zadanie 9</h2>");
-                $sql = ("SELECT nazwa_dzial, sum(zarobki) as suma_zarobki FROM pracownicy, organizacja where dzial=id_org group by nazwa_dzial");
+                $sql = ("SELECT nazwa_dzial, sum(zarobki) as suma_zarobki FROM pracownicy, organizacja where dzial=id_org group by dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
@@ -178,7 +178,7 @@
 
 
                 echo("<h2>Zadanie 10</h2>");
-                $sql = ("SELECT count(imie) as ilosc pracownikow, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial");
+                $sql = ("SELECT count(imie) as ilosc_pracownikow, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
