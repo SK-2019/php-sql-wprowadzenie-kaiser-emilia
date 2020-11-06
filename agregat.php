@@ -159,7 +159,7 @@
 
 
                 echo("<h2>Zadanie 9</h2>");
-                $sql = ("SELECT nazwa_dzial, imie, sum(zarobki) as suma_zarobki FROM pracownicy, organizacja where dzial=id_org group by dzial");
+                $sql = ("SELECT nazwa_dzial, imie, sum(zarobki) as suma_zarobki FROM pracownicy, organizacja where dzial=id_org group by nazwa_dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
