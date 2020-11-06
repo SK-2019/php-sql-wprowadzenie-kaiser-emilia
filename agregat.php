@@ -217,8 +217,29 @@
 
 
   
-                  echo("<h2>Zadanie 14</h2>");
-                $sql = ("SELECT avg(zarobki) as srednia_zarobki, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial");
+                echo("<h2>Zadanie 14</h2>");
+                $sql = ("SELECT nazwa_dzial, sum(zarobki) as suma_zarobki FROM pracownicy, organizacja where dzial=id_org group by dzial having sum(zarobki)<28");
+                echo("<h2>".$sql."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>nazwa_dzial</th>");
+                        echo("<th>suma_zarobki</th>");
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma_zarobki"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
+  
+  
+  
+  
+                  echo("<h2>Zadanie 15</h2>");
+                $sql = ("SELECT avg(zarobki) as srednia_zarobki, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie not like '%a') group by dzial having avg(zarobki)>30");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
@@ -234,14 +255,6 @@
                             }
                         echo("</table>");
 
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
