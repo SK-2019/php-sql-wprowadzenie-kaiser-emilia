@@ -6,7 +6,7 @@
             <div class="nav">
         linki
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">Org i Prac</a>
-        <a href="agregat.php">F. agregujace</a>
+        <a href="pracownicy.php">Pracownicy</a>
 </div>
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
