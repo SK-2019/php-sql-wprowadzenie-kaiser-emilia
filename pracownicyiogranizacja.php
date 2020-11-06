@@ -131,7 +131,7 @@
 
 
                 echo("<h2>Zadanie 8</h2>");
-              $sql = ("SELECT imie, zarobki, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a') and(dzial=1 or dzial=3) order by zarobki asc");
+              $sql = ("SELECT imie, zarobki, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a') and (dzial=1 or dzial=3) order by zarobki asc");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
