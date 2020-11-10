@@ -17,7 +17,7 @@
         <?php
 
                 echo("<h2>Zadanie 1</h2>");
-                $sql = ("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy;");
+                $sql = ("SELECT * , nazwa_dzial, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja where id_org=dzial;");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
@@ -28,14 +28,39 @@
                         echo("<th>dzial</th>");
                         echo("<th>zarobki</th>");
                         echo("<th>data_urodzenia</th>");
+                        echo("<th>nazwa_dzial</th>");
                         echo("<th>wiek</th>");
 
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
-                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["wiek"]."</td>");
+                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["wiek"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
+
+
+                echo("<h2>Zadanie 2</h2>");
+                $sql = ("SELECT * , nazwa_dzial, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja where id_org=dzial and nazwa_dzial = serwis;");
+                echo("<h2>".$sql."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>id_pracownicy</th>");
+                        echo("<th>imie</th>");
+                        echo("<th>dzial</th>");
+                        echo("<th>zarobki</th>");
+                        echo("<th>data_urodzenia</th>");
+                        echo("<th>nazwa_dzial</th>");
+                        echo("<th>wiek</th>");
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["wiek"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
 
         ?>
 </html>
