@@ -214,7 +214,7 @@
 
 
                 echo("<h2>Zadanie 11</h2>");
-                $sql = ("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as minlat, nazwa_dzial, imie from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
+                $sql = ("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as minlat, nazwa_dzial, imie from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY nazwa_dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
