@@ -5,13 +5,14 @@
         </head>
             <div class="nav">
         linki
-        <a href="https://yma.herokuapp.com/">Strona główna</a>
-        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>
-        <a href="pracownicy.php">Pracownicy</a>
-        <a href="pracownicyiorganizacja.php">Prac i Org</a>
+        <a href="https://yma.herokuapp.com/">Strona główna</a>  |
+        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>  |
+        <a href="pracownicy.php">Pracownicy</a>  |
+        <a href="pracownicyiorganizacja.php">Prac i Org</a>  |
+        <a href="agregat.php">Funkcje Agregujace</a>  |
+        <a href="dataiczas.php">Data i Czas</a>
 
-</div>
-          <?php
+</div>          <?php
                 echo("<h1>PRACOWNICY</h1>");
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT * FROM pracownicy where dzial=2");
