@@ -214,13 +214,13 @@
 
 
                 echo("<h2>Zadanie 11</h2>");
-                $sql = ("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial, imie from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY nazwa_dzial");
+                $sql = ("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as minlat, nazwa_dzial, imie from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
                 include("connect.php");
                         echo("<table border=1>");
-                        echo("<th>min</th>");
+                        echo("<th>minlat</th>");
                         echo("<th>nazwa_dzial</th>");
                         echo("<th>imie</th>");
 
@@ -228,7 +228,7 @@
 
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
-                                    echo("<td>".$row["min"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["imie"]."</td>");
+                                    echo("<td>".$row["minlat"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["imie"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
