@@ -401,7 +401,7 @@
 
 
                 echo("<h1>Zadanie 7 - W którym dniu roku urodziłeś się / urodziłaś się* </h1>");
-                $sql2 = ("SELECT DATE_FORMAT("2002-10-01", '%j') as dzienroku");
+                $sql2 = ("SELECT DATE_FORMAT('2003-12-05', '%j') as dzienroku");
                 echo("<h2>".$sql2."</h2>");
                 $result=$conn->query($sql2);
                 include("connect.php");
@@ -418,7 +418,7 @@
 
 
 
-                echo("<h1>Zadanie 8 - Ile godzin, minut już żyjesz </h1>");
+                echo("<h1>Zadanie 8 - Pracownicy z nazwami dni tygodnia, w których się urodzili z sortowaniem od Poniedziałku do Niedzieli </h1>");
                 $sql1 = ("SET lc_time_names = 'pl_PL'");
                 $sql2 = ("SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia FROM pracownicy ORDER BY 
                              CASE
