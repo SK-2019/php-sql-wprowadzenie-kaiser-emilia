@@ -307,7 +307,7 @@
 
                 echo("<h1>Zadanie 3 - Wyświetl nazwy miesięcy w dacie urodzenia </h1>");
                 $sql1 = ("SET lc_time_names = 'pl_PL'");
-                $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%w-%M-%y') as format from pracownicy");
+                $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%M-%W-%Y') as format from pracownicy");
                 echo("<h2>".$sql2."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
