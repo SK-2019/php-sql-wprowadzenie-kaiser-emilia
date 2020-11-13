@@ -236,7 +236,7 @@
 
 
                 echo("<h2>Zadanie 13</h2>");
-                $sql = ("SELECT * FROM pracownicy WHERE imie NOT LIKE '%a' ORDER BY data_urodzenia ASC LIMIT 1");
+                $sql = ("SELECT * FROM pracownicy, organizacja WHERE (id_org=dzial) and (imie NOT LIKE '%a') ORDER BY data_urodzenia ASC LIMIT 1");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
