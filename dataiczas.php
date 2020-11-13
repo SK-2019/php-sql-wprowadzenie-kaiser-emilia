@@ -307,7 +307,7 @@
 
                 echo("<h1>Zadanie 3 - Wyświetl nazwy miesięcy w dacie urodzenia </h1>");
                 $sql1 = ("SET lc_time_names = 'pl_PL'");
-                $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%M-%W-%Y') as format from pracownicy");
+                $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') as format from pracownicy");
                 echo("<h2>".$sql2."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql1);
@@ -397,6 +397,58 @@
                                 echo("</tr>");
                             }
                         echo("</table>");
+
+
+
+                echo("<h1>Zadanie 7 - W którym dniu roku urodziłeś się / urodziłaś się* </h1>");
+                $sql2 = ("SELECT DATE_FORMAT("2002-10-01", '%j') as dzienroku");
+                echo("<h2>".$sql2."</h2>");
+                $result=$conn->query($sql2);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>dzienroku</th>");
+
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["dzienroku"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
+
+
+                echo("<h1>Zadanie 8 - Ile godzin, minut już żyjesz </h1>");
+                $sql1 = ("SET lc_time_names = 'pl_PL'");
+                $sql2 = ("SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia FROM pracownicy ORDER BY 
+                             CASE
+
+                                  WHEN dzien = 'Poniedziałek' THEN 1
+                                  WHEN dzien = 'Wtorek' THEN 2
+                                  WHEN dzien = 'Środa' THEN 3
+                                  WHEN dzien= 'Czwartek' THEN 4
+                                  WHEN dzien = 'Piątek' THEN 5
+                                  WHEN dzien = 'Sobota' THEN 6
+                                  WHEN dzien = 'Niedziela' THEN 7
+                             END ASC");
+                echo("<h2>".$sql2."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql1);
+                $result=$conn->query($sql2);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>dzien</th>");
+                        echo("<th>imie</th>");
+                        echo("<th>data_urodzenia</th>");
+
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["dzien"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
 
 
 
