@@ -260,7 +260,7 @@
                 echo("<h1>Formatowanie dat </h1>");
 
                 echo("<h1>Zadanie 1 Wyświetl nazwy dni w dacie urodzenia </h1>");
-                $sql = ("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy");
+                $sql = ("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
@@ -271,10 +271,12 @@
                         echo("<th>dzial</th>");
                         echo("<th>zarobki</th>");
                         echo("<th>data_urodzenia</th>");
+                        echo("<th>format</th>");
+
 
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
-                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["format"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
