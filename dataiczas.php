@@ -241,6 +241,7 @@
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
                 include("connect.php");
+                        echo("<table border=1>");
                         echo("<th>id_pracownicy</th>");
                         echo("<th>imie</th>");
                         echo("<th>dzial</th>");
