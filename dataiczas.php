@@ -474,7 +474,7 @@
 
                 echo("<h1>Zadanie 10 - Ilu pracowników urodziło się w poszczególne dni tygodnia </h1>");
                 $sql1 = ("SET lc_time_names = 'pl_PL'");
-                $sql2 = ("SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien FROM pracownicy where dzientygodnia- group by dzien ORDER BY 
+                $sql2 = ("SELECT Count(DATE_FORMAT(data_urodzenia,'%W')) as ilosc, DATE_FORMAT(data_urodzenia,'%W') as dzien FROM pracownicy group by dzien ORDER BY 
                              CASE
 
                                   WHEN dzien = 'Poniedziałek' THEN 1
@@ -491,12 +491,14 @@
                 $result=$conn->query($sql2);
                 include("connect.php");
                         echo("<table border=1>");
+                        echo("<th>ilosc</th>");
+
                         echo("<th>dzien</th>");
 
 
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
-                                    echo("<td>".$row["dzien"]."</td>");
+                                    echo("<td>".$row["ilosc"]."</td><td>".$row["dzien"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
