@@ -257,7 +257,7 @@
                         echo("</table>");
 
 
-                echo("<h1>Formatowanie dat </h1>");
+                echo("<h1 class='fd'>Formatowanie dat </h1>");
 
                 echo("<h1>Zadanie 1 - Wyświetl nazwy dni w dacie urodzenia </h1>");
                 $sql = ("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy");
