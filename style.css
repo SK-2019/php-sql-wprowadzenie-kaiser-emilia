@@ -47,6 +47,14 @@ tr:hover{background-color:#ffcc99;}
     left: 40%;
     position: absolute;
 }
+
+.fd {
+  display:flex;
+  justify-content:center;
+ 
+}
+
+
 // #cc99ff fioletowy
 // #00b386 niebieski
 // #e6ccff jasny fioletowy
