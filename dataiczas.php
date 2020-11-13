@@ -453,7 +453,7 @@
 
                 echo("<h1>Zadanie 9 - Ilu pracowników urodziło się w poniedziałek </h1>");
                 $sql1 = ("SET lc_time_names = 'pl_PL'");
-                $sql2 = ("SELECT Count(DATE_FORMAT(data_urodzenia,'%W')) as urodzeniwpon  where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'");
+                $sql2 = ("SELECT Count(DATE_FORMAT(data_urodzenia,'%W')) as urodzeniwpon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'");
                 echo("<h2>".$sql2."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql1);
