@@ -286,7 +286,7 @@
                 echo("<h1>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek) </h1>");
                 $sql1 = ("SET lc_time_names = 'pl_PL'");
                 $sql2 = ("SELECT DATE_FORMAT(CURDATE(), '%W')as data");
-                echo("<h2>".$sql1."</h2>");
+                echo("<h2>".$sql2."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql1);
                 $result=$conn->query($sql2);
@@ -299,6 +299,31 @@
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
                                     echo("<td>".$row["data"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
+
+
+                echo("<h1>Zadanie 3 - Wyświetl nazwy miesięcy w dacie urodzenia </h1>");
+                $sql1 = ("SET lc_time_names = 'pl_PL'");
+                $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') from pracownicy;");
+                echo("<h2>".$sql2."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql1);
+                $result=$conn->query($sql2);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>id_pracownicy</th>");
+                        echo("<th>imie</th>");
+                        echo("<th>dzial</th>");
+                        echo("<th>zarobki</th>");
+                        echo("<th>data_urodzenia</th>");
+
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
