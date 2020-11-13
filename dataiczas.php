@@ -16,7 +16,7 @@
 
         <?php
 
-                echo("<h2>Zadanie 1</h2>");
+                echo("<h1>Zadanie 1 - Wiek poszczególnych pracowników (w latach) </h1>");
                 $sql = ("SELECT * , nazwa_dzial, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja where id_org=dzial;");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -39,7 +39,7 @@
                         echo("</table>");
 
 
-                echo("<h2>Zadanie 2</h2>");
+                echo("<h1>Zadanie 2 - Wiek poszczególnych pracowników (w latach) z działu serwis </h1>");
                 $sql = ("SELECT * , nazwa_dzial, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja where id_org=dzial and nazwa_dzial = 'serwis'");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -62,7 +62,7 @@
                         echo("</table>");
 
 
-                echo("<h2>Zadanie 3</h2>");
+                echo("<h1>Zadanie 3 - Suma lat wszystkich pracowników </h1>");
                 $sql = ("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma FROM pracownicy");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -80,7 +80,7 @@
 
 
 
-                echo("<h2>Zadanie 4</h2>");
+                echo("<h1>Zadanie 4 - Suma lat pracowników z działu handel </h1>");
                 $sql = ("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma from pracownicy, organizacja WHERE id_org=dzial and nazwa_dzial = 'handel'");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -98,7 +98,7 @@
 
 
 
-                echo("<h2>Zadanie 5</h2>");
+                echo("<h1>Zadanie 5 - Suma lat kobiet </h1>");
                 $sql = ("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaWiekuKobiet from pracownicy WHERE imie LIKE '%a'");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -116,7 +116,7 @@
 
 
 
-                echo("<h2>Zadanie 6</h2>");
+                echo("<h1>Zadanie 6 - Suma lat mężczyzn </h1>");
                 $sql = ("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaWiekuMezcyzn from pracownicy WHERE imie NOT LIKE '%a'");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -134,7 +134,7 @@
 
 
 
-                echo("<h2>Zadanie 7</h2>");
+                echo("<h1>Zadanie 7 - Średnia lat pracowników w poszczególnych działach  (wraz z wypisanymi nazwami działów) </h1>");
                 $sql = ("SELECT AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SredniaWieku, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -153,7 +153,7 @@
                         echo("</table>");
 
 
-                echo("<h2>Zadanie 8</h2>");
+                echo("<h1>Zadanie 8 - Suma lat pracowników w poszczególnych działach </h1>");
                 $sql = ("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaWieku, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -173,7 +173,7 @@
 
 
 
-                echo("<h2>Zadanie 9</h2>");
+                echo("<h1>Zadanie 9 - Najstarsi pracownicy w każdym dziale (nazwa_dział, wiek) </h1>");
                 $sql = ("SELECT MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -193,7 +193,7 @@
 
 
 
-                echo("<h2>Zadanie 10</h2>");
+                echo("<h1>Zadanie 10 - Najmłodsi pracownicy z działu: handel i serwis (nazwa_dział, wiek) </h1>");
                 $sql = ("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -215,7 +215,7 @@
 
 
 
-                echo("<h2>Zadanie 12</h2>");
+                echo("<h1>Zadanie 12 - Długość życia pracowników w dniach </h1>");
                 $sql = ("SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS dni_zycia FROM pracownicy");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
@@ -235,7 +235,7 @@
 
 
 
-                echo("<h2>Zadanie 13</h2>");
+                echo("<h1>Zadanie 13 - Najstarszy mężczyzna </h1>");
                 $sql = ("SELECT * FROM pracownicy, organizacja WHERE (id_org=dzial) and (imie NOT LIKE '%a') ORDER BY data_urodzenia ASC LIMIT 1");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
