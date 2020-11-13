@@ -472,6 +472,36 @@
 
 
 
+                echo("<h1>Zadanie 10 - Ilu pracowników urodziło się w poszczególne dni tygodnia </h1>");
+                $sql1 = ("SET lc_time_names = 'pl_PL'");
+                $sql2 = ("SELECT Count(DATE_FORMAT(data_urodzenia,'%W')) as dzien FROM pracownicy ORDER BY 
+                             CASE
+
+                                  WHEN dzien = 'Poniedziałek' THEN 1
+                                  WHEN dzien = 'Wtorek' THEN 2
+                                  WHEN dzien = 'Środa' THEN 3
+                                  WHEN dzien= 'Czwartek' THEN 4
+                                  WHEN dzien = 'Piątek' THEN 5
+                                  WHEN dzien = 'Sobota' THEN 6
+                                  WHEN dzien = 'Niedziela' THEN 7
+                             END ASC");
+                echo("<h2>".$sql2."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql1);
+                $result=$conn->query($sql2);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>dzien</th>");
+                        echo("<th>data_urodzenia</th>");
+
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["dzien"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
 
 
 
