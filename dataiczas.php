@@ -310,7 +310,8 @@
                 $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%M-%W-%Y') as format from pracownicy");
                 echo("<h2>".$sql2."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
-                $result=$conn->query($sql);
+                $result=$conn->query($sql1);
+                $result=$conn->query($sql2);
                 include("connect.php");
                         echo("<table border=1>");
                         echo("<th>id_pracownicy</th>");
@@ -327,6 +328,76 @@
                                 echo("</tr>");
                             }
                         echo("</table>");
+
+
+
+                echo("<h1>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund) </h1>");
+                $sql2 = ("SELECT curtime(4)");
+                echo("<h2>".$sql2."</h2>");
+                $result=$conn->query($sql2);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>curtime(4)</th>");
+
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["curtime(4)"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
+
+
+
+                echo("<h1>Zadanie 5 - Wyświetl datę urodzenia w formie: ROK-MIESIĄC-DZIEŃ  (2012-styczeń-poniedziałek) </h1>");
+                $sql1 = ("SET lc_time_names = 'pl_PL'");
+                $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') as format from pracownicy");
+                echo("<h2>".$sql2."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql1);
+                $result=$conn->query($sql2);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>id_pracownicy</th>");
+                        echo("<th>imie</th>");
+                        echo("<th>dzial</th>");
+                        echo("<th>zarobki</th>");
+                        echo("<th>data_urodzenia</th>");
+                        echo("<th>format</th>");
+
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["format"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
+
+
+                echo("<h1>Zadanie 6 - Ile godzin, minut już żyjesz </h1>");
+                $sql1 = ("SET lc_time_names = 'pl_PL'");
+                $sql2 = ("SELECT imie,  DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy");
+                echo("<h2>".$sql2."</h2>");
+                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $result=$conn->query($sql1);
+                $result=$conn->query($sql2);
+                include("connect.php");
+                        echo("<table border=1>");
+                        echo("<th>imie</th>");
+                        echo("<th>dni</th>");
+                        echo("<th>godziny</th>");
+                        echo("<th>minuty</th>");
+
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["imie"]."</td><td>".$row["dni"]."</td><td>".$row["godziny"]."</td><td>".$row["minuty"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
 
 
 
