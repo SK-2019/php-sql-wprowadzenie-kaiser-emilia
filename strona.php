@@ -13,7 +13,7 @@ echo("<li> numer tel: ".$_POST['phone']."</li>");
 echo("<li> miasto: ".$_POST['city']."</li>");
 
 
-$sql="INSERT INTO `pracownicy`(`id`, `imie`, `dzial_id`, `zarobki`, `data_urodzenia`) VALUES (null,'józef',2,23,'2001-10-23')";
+$sql="INSERT INTO 'pracownicy'('id', 'imie', 'dzial', 'zarobki', 'data_urodzenia') VALUES (null,'józef',2,23,'2001-10-23')";
 $conn->query($sql);
 
 ?>
