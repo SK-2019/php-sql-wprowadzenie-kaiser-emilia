@@ -13,6 +13,12 @@
         <a href="dataiczas.php">Data i Czas</a>
 
 </div>
+
+
+     <form action="strona.php" method="POST">
+        <input type="text" name="name">
+        <input type="submit" value="wyślij w świat">
+   </form>
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
                 echo("<h2>Zadanie 1</h2>");
