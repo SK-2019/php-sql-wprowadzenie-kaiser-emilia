@@ -6,8 +6,8 @@
 </html> 
   
 <?php
-
-echo($_POST['firstname']);
+ul
+echo("<li> imie: ".$_POST['firstname']."<li>");
 echo($_POST['name']);
 echo($_POST['phone']);
 echo($_POST['city']);
