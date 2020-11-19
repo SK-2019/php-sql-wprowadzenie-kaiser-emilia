@@ -1,6 +1,7 @@
 <html>
         <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
         </head>
   
 </html> 
@@ -18,3 +19,5 @@ $sql="INSERT INTO 'pracownicy'('id', 'imie', 'dzial', 'zarobki', 'data_urodzenia
 $conn->query($sql);
 
 ?>
+
+<img class="stronatapeta" src="stronatapeta.png">
