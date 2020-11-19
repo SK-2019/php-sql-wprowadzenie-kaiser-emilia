@@ -4,10 +4,10 @@
         <link rel="stylesheet" href="style.css">
         </head>
 
-<body>
+<style>
        background-image: url("glownatapeta.png");
         
-        </body>
+        </style>
 
 
             <div class="nav">
