@@ -60,6 +60,8 @@ tr:hover{background-color:#ffcc99;}
       top: 0%;
       right: 0%;
       position: absolute;
+	    z-index: -1;
+
   }
 
 .fd {
