@@ -170,3 +170,4 @@
         ?>
         <a href="#"><img class="obraz" src="seba.jpg"></a>
 </html>
+<img class="glownatapeta" src="glownatapeta.png">
