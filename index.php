@@ -5,7 +5,7 @@
         </head>
 
 <style>
-       background-image: url("glownatapeta.png");
+       background-image: glownatapeta.png;
         
         </style>
 
