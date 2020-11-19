@@ -3,6 +3,13 @@
         <head>
         <link rel="stylesheet" href="style.css">
         </head>
+
+<body>
+       background-image: url("glownatapeta.png");
+        
+        </body>
+
+
             <div class="nav">
         linki
         <a href="https://yma.herokuapp.com/">Strona główna</a>  |
@@ -169,5 +176,4 @@
 
         ?>
         <a href="#"><img class="obraz" src="seba.jpg"></a>
-</html>
-<img class="glownatapeta" src="glownatapeta.png">
+</html>>
