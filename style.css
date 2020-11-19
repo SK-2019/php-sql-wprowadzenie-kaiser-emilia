@@ -9,7 +9,9 @@ input {
 li {
 	color: white;
 	margin-left: 20px;
-	font-size: 50px;
+	font-size: 34px;
+  	text-shadow: 5px 5px 5px black;
+
 }
 
 a {
