@@ -6,7 +6,10 @@ input {
   margin: 3px;
 }
 
-
+li {
+	color: white;
+	margin-left; 20px;
+	font-size; 20px;
 
 a {
 text-decoration: none;
