@@ -28,6 +28,8 @@
         <a href="agregat.php">Funkcje Agregujace</a>  |
         <a href="dataiczas.php">Data i Czas</a>  |
         <a href="formularz.html">Formularz</a>
+        <a href="insert.php">Insert</a>
+
 
 
 </div>
