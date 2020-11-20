@@ -25,8 +25,14 @@ text-align: center;
 
 }
 
+.linka {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
 .obrazek {
-	text_align: center;
+	text-align: center;
 }
 
 
