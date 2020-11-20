@@ -4,6 +4,8 @@ body {
 
 input {
   margin: 3px;
+	border-style: dotted;
+	border-radius: 4px;
 }
 
 li {
