@@ -25,7 +25,9 @@
         linki
         <a href="https://yma.herokuapp.com/">Strona główna</a>  |
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>  |
-        <a class="aard" href="pracownicy.php"><img class="obrazek" src="aard.png">Pracownicy</a>  |
+<div class="linka"
+        <a href="pracownicy.php"><img class="obrazek" src="aard.png">Pracownicy</a> 
+                </div> |
         <a href="pracownicyiorganizacja.php">Prac i Org</a>  |
         <a href="agregat.php">Funkcje Agregujace</a>  |
         <a href="dataiczas.php">Data i Czas</a>  |
