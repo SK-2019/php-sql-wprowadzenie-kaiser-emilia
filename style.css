@@ -58,8 +58,7 @@ h2 {
 
 
 table{
-    background-color: lightgray;
-	opacity: 0.4;
+    background-color: lightgray, 0.4;
 }
 
 th{
