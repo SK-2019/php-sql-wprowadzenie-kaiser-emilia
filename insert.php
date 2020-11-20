@@ -19,7 +19,7 @@
               $_POST['dzial'], 
               $_POST['zarobki'],
               $_POST['data_urodzenia']
-            ";
+            )";
 
 
       echo "<li>". $sql;
