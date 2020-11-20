@@ -49,8 +49,9 @@ h1 {
 
 h2 {
   color: white;
-  margin-left: 20px;    
-  font-family: 'Arbutus Slab';
+  margin-left: 20px;
+  text-shadow: 2px 2px 2px black;    
+ 
 
 }
 
