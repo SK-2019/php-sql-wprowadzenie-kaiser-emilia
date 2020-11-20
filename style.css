@@ -20,14 +20,12 @@ a {
 text-decoration: none;
 background-color: #ff9999;
 padding: 16px 16px 16px 16px;
+display: flex;
+justify-content: center;
+align-items: center;
 
 
-}
 
-.aard {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 
