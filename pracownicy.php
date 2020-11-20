@@ -3,14 +3,20 @@
         <head>
         <link rel="stylesheet" href="style.css">
         </head>
+
+
+
             <div class="nav">
-        linki
-        <a href="https://yma.herokuapp.com/">Strona główna</a>  |
-        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>  |
-        <a href="pracownicy.php">Pracownicy</a>  |
-        <a href="pracownicyiorganizacja.php">Prac i Org</a>  |
-        <a href="agregat.php">Funkcje Agregujace</a>  |
-        <a href="dataiczas.php">Data i Czas</a>
+        <a class="link a" href="https://yma.herokuapp.com/"><img class="obrazek" src="igni.png">Strona główna<img class="obrazek" src="igni.png"></a>  
+        <a class="link b" href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia"><img class="obrazek" src="aksji.png">GITHUB<img class="obrazek" src="aksji.png"></a>  
+        <a class="link c" href="pracownicy.php"><img class="obrazek" src="aard.png"> Pracownicy <img class="obrazek" src="aard.png"></a>  
+        <a class="link d" href="pracownicyiorganizacja.php"><img class="obrazek" src="quen.png">Prac i Org<img class="obrazek" src="quen.png"></a>  
+        <a class="link e" href="agregat.php"><img class="obrazek" src="yrden.png">Funkcje Agregujace<img class="obrazek" src="yrden.png"></a>  
+        <a class="link f" href="dataiczas.php"><img class="obrazek" src="igni.png">Data i Czas<img class="obrazek" src="igni.png"></a>  
+        <a class="link g" href="formularz.html"><img class="obrazek" src="aksji.png">Formularz<img class="obrazek" src="aksji.png"></a>  
+        <a class="link h" href="daneDoBazy.html"><img class="obrazek" src="aard.png">Dane do bazy<img class="obrazek" src="aard.png"></a>
+
+        </div>
 
 
 
