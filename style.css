@@ -16,6 +16,11 @@ li {
 
 }
 
+.obrazek {
+	display: flex;
+	aling-items: center;
+}
+
 a {
 text-decoration: none;
 background-color: #ff9999;
