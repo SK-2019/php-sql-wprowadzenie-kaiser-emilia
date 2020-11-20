@@ -8,11 +8,7 @@
 
         <body background="glownatapeta.png">
 
-        <style>
-        body {
-            font-family: 'Magra';font-size: 22px;
-        }
-        </style>
+
 
 
             <div class="nav">
