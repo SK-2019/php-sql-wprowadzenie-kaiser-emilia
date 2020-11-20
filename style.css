@@ -25,7 +25,8 @@ padding: 1rem;
 
 .link {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
 
 }
 
@@ -106,11 +107,7 @@ tr:hover{background-color:#ffcc99;}
 
   }
 
-.fd {
-  display:flex;
-  justify-content:center;
- 
-}
+
 
 h2 {
   padding-top:12px;
