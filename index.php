@@ -30,7 +30,7 @@
         <a href="agregat.php">Funkcje Agregujace</a>  |
         <a href="dataiczas.php">Data i Czas</a>  |
         <a href="formularz.html">Formularz</a>  |
-        <a class="link" href="daneDoBazy.html">Dane do bazy</a>
+        <a class="sebolekfiutolek" href="daneDoBazy.html">Dane do bazy</a>
 
         </div>
 
