@@ -6,7 +6,9 @@
 
         </head>
 
-        <body background="glownatapeta.png">
+<body>
+        background="glownatapeta.png"
+        </body>
 
 
 
