@@ -8,27 +8,27 @@
     echo "<li>". $_POST['data_urodzenia'];
 
 
-   require_once('connect.php');
+//    require_once('connect.php');
             
             
             
-    $sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
-            VALUES (
-              null, 
-              $_POST['name'], 
-              $_POST['dzial'], 
-              $_POST['zarobki'],
-              $_POST['data_urodzenia']
-            )";
+//     $sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
+//             VALUES (
+//               null, 
+//               $_POST['name'], 
+//               $_POST['dzial'], 
+//               $_POST['zarobki'],
+//               $_POST['data_urodzenia']
+//             )";
 
 
-      echo "<li>". $sql;
+//       echo "<li>". $sql;
 
-      if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-      } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-      }
+//       if ($conn->query($sql) === TRUE) {
+//         echo "New record created successfully";
+//       } else {
+//         echo "Error: " . $sql . "<br>" . $conn->error;
+//       }
 
-      $conn->close();
-      ?>
+//       $conn->close();
+//       ?>
