@@ -24,7 +24,7 @@ $sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial,zarobki,data_urodzeni
 					$_POST['name'], 
 					$_POST['dzial'], 
 					$_POST['zarobki'],
-					$_POST['data_urodzenia'])"
+					$_POST['data_urodzenia'])
 
 
 echo ("<li>". $sql);
