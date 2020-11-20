@@ -172,5 +172,5 @@
                          echo("</table>");
 
         ?>
-        <a href="#"><img class="obraz" src="seba.jpg"></a>
+       // <a href="#"><img class="obraz" src="seba.jpg"></a>
 </html>>
