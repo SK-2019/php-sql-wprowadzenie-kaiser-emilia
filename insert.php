@@ -8,13 +8,7 @@
     echo "<li>". $_POST['data_urodzenia'];
 
 
-               $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
-                $result=$conn->query($sql);
-                include("connect.php");
-
-            if ($conn->connect_error) {
-              die("Connection failed: " . $conn->connect_error);
-            }
+   require_once('connect.php');
             
             
             
