@@ -1,6 +1,8 @@
+
+
 <?php
-
-
+echo("jestes w insert.php");
+echo $_POST['name'];
 
                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
@@ -11,13 +13,17 @@
             }
             
             
-            $sql = "INSERT INTO Pracownik (null, imie, dzial, zarobki) 
-            VALUES (null,'Ksawery', 3, 36,'1995-10-21')";
             
-            
-            
-            $conn->query($sql);
+            $sql = "INSERT INTO Pracownik (null, $_POST['name'], dzial, zarobki) 
+                   VALUES (null,'Balbina', 1, 76,'1991-11-21')";
+
+            if ($conn->query($sql) === TRUE) {
+              echo "New record created successfully";
+            } else {
+              echo "Error: " . $sql . "<br>" . $conn->error;
+            }
 
             $conn->close();
-            ?>
 
+
+?>
