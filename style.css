@@ -30,7 +30,9 @@ border-radius: 11px;
 }
 
 .nav {
-	opcity: 0.1;
+	display: flex;
+	justify-content: space-around;
+	
 }
 
 
