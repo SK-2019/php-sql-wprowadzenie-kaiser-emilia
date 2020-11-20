@@ -14,6 +14,17 @@
 
 </div>
 
+
+<body background="dataiczas.png">
+
+        <style>
+                body {
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+
+                }
+        </style>
+
         <?php
 
                 echo("<h1>Zadanie 1 - Wiek poszczególnych pracowników (w latach) </h1>");
