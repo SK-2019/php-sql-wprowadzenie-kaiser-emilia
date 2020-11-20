@@ -16,10 +16,11 @@ li {
 
 }
 
+
 .link{
     text-decoration: none;
     padding:1rem;
-    background-color:(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.4);
     color:white;
     align-items: center;
     justify-content: center;
