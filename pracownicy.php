@@ -12,6 +12,19 @@
         <a href="agregat.php">Funkcje Agregujace</a>  |
         <a href="dataiczas.php">Data i Czas</a>
 
+
+
+        <body background="pracownicy.png">
+        
+<style>
+        body{
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+
+        }
+                </style>
+
+
 </div>          <?php
                 echo("<h1>PRACOWNICY</h1>");
                 echo("<h2>Zadanie 1</h2>");
