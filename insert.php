@@ -18,7 +18,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
+$sql = "INSERT INTO pracownicy (null, name, dzial,zarobki,data_urodzenia)
 	      VALUES (
 					null,
 					$_POST['name'], 
