@@ -14,6 +14,18 @@
 
 </div>
 
+
+        <body background="funagr.png">
+        
+<style>
+        body{
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+
+        }
+                </style>
+
+
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
 
