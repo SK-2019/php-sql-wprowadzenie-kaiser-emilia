@@ -6,9 +6,13 @@
 
         </head>
 
-<body>
-        <background="glownatapeta.png">
-        </body>
+
+        <body background="glownatapeta.png">
+<style>
+        body{
+          background-repeat: no-repeat;
+        }
+                </style>
 
 
 
