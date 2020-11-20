@@ -9,7 +9,7 @@
 
 <style>
         body{
-          background="glownatapeta.png"
+          background="glownatapeta.png";
           background-repeat: no-repeat;
           background-attachment: fixed;
 
