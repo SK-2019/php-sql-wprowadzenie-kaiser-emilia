@@ -4,6 +4,18 @@
         </head>
   
 </html> 
+
+
+        <body background="stronatapeta.png">
+        
+<style>
+        body{
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+                </style>
+
   
 <?php
 include("connect.php");
@@ -18,5 +30,3 @@ $sql="INSERT INTO 'pracownicy'('id', 'imie', 'dzial', 'zarobki', 'data_urodzenia
 $conn->query($sql);
 
 ?>
-
-<img class="stronatapeta" src="stronatapeta.png">
