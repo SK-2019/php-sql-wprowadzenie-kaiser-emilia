@@ -34,14 +34,7 @@
 </div>
 
 
-     <form action="strona.php" method="POST">
-             <input type="text" name="firstname"></br>
-        <input type="text" name="name"></br>
-        <input type="text" name="phone"></br>
-        <input type="text" name="city"></br>
 
-        <input type="submit" value="wyślij w świat">
-   </form>
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
                 echo("<h2>Zadanie 1</h2>");
