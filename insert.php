@@ -23,13 +23,13 @@
                 include("connect.php"); 
 
 
-      echo "<li>". $sql;
+//       echo "<li>". $sql;
 
-      if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-      } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-      }
+//       if ($conn->query($sql) === TRUE) {
+//         echo "New record created successfully";
+//       } else {
+//         echo "Error: " . $sql . "<br>" . $conn->error;
+//       }
 
-      $conn->close();
-      ?>
+//       $conn->close();
+//       ?>
