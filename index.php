@@ -2,9 +2,15 @@
 <html>
         <head>
         <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Magra' rel='stylesheet'>
+
         </head>
 
-<body background="glownatapeta.png">
+        <body background="glownatapeta.png">
+
+        body {
+                font-family: 'Magra';
+        }
 
 
             <div class="nav">
