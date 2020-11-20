@@ -1,35 +1,27 @@
+<?php
 
+$servername = "remotemysql.com";
+$username = "gQvQ0qIoDC";
+$password = "4HAPys5ynL";
+$dbname = "gQvQ0qIoDC";
 
-    <?php
-    echo("jestes w insert.php <br>");
-    echo ("<li>". $_POST['name']);
-    echo ("<li>". $_POST['dzial']);
-    echo ("<li>". $_POST['zarobki']);
-    echo ("<li>". $_POST['data_urodzenia']);
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 
+$sql = "INSERT INTO pracownicy (null, imie, dzial, zarobki) 
+       VALUES (null,'Ksawery', 3, 36,'1995-10-21')";
 
-            
-    $sql = "(INSERT INTO pracownicy (null, name, dzial,zarobki,data_urodzenia)
-            VALUES (
-              null, 
-              $_POST['name'], 
-              $_POST['dzial'], 
-              $_POST['zarobki'],
-              $_POST['data_urodzenia']
-            ))";
+//zapisanie do bazy danych
+$conn->query($sql);
 
- $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
-                $result=$conn->query($sql);
-                include("connect.php"); 
+if ($conn->query($sql) === TRUE) {
+  echo ("New record created successfully");
+} else {
+//informacja o ewentualnych błędach
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
-
-      echo ($sql);
-
-//       if ($conn->query($sql) === TRUE) {
-//         echo "New record created successfully";
-//       } else {
-//         echo "Error: " . $sql . "<br>" . $conn->error;
-//       }
-
-//       $conn->close();
-      ?>
+$conn->close();
+?>
