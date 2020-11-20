@@ -1,8 +1,12 @@
-<?php
+-<?php
 
 
 echo("jestes w insert.php");
-echo $_POST['name'];
+echo "<li>". $_POST['name'];
+echo "<li>". $_POST['dzial'];
+echo "<li>". $_POST['zarobki'];
+echo "<li>". $_POST['data_urodzenia'];
+
 
 $servername = "remotemysql.com";
 $username = "gQvQ0qIoDC";
