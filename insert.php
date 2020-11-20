@@ -20,11 +20,11 @@ if ($conn->connect_error) {
 
 $sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
 	      VALUES (
-					null,". 
+					null,
 					$_POST['name'], 
 					$_POST['dzial'], 
 					$_POST['zarobki'],
-					$_POST['data_urodzenia']
+					$_POST['data_urodzenia']"
 
 
 echo ("<li>". $sql);
