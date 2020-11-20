@@ -25,6 +25,7 @@ padding: 1rem;
 
 .link {
 	display: flex;
+	justify-content: space-between;
 
 }
 
