@@ -26,9 +26,8 @@ $sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
 					$_POST['zarobki'],
 					$_POST['data_urodzenia']
 
-$conn->query($sql);
 
-echo "<li>". $sql;
+echo ("<li>". $sql);
 
 if ($conn->query($sql) === TRUE) {
   echo ("New record created successfully");
