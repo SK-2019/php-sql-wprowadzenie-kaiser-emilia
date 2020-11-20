@@ -16,10 +16,6 @@ li {
 
 }
 
-.obrazek {
-	display: flex;
-	aling-items: center;
-}
 
 a {
 text-decoration: none;
@@ -27,6 +23,10 @@ background-color: #ff9999;
 padding: 16px 16px 16px 16px;
 text-align: center;
 
+}
+
+.obrazek {
+	text_align: center;
 }
 
 
