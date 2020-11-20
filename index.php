@@ -23,14 +23,14 @@
 
             <div class="nav">
         linki
-        <a class="link 1" href="https://yma.herokuapp.com/">Strona główna</a>  |
-        <a class="link 2" href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>  |
-        <a class="link 3" href="pracownicy.php"><img class="obrazek" src="aard.png">Pracownicy</a>  |
-        <a class="link 4" href="pracownicyiorganizacja.php">Prac i Org</a>  |
-        <a class="link 5" href="agregat.php">Funkcje Agregujace</a>  |
-        <a class="link 6" href="dataiczas.php">Data i Czas</a>  |
-        <a class="link 7" href="formularz.html">Formularz</a>  |
-        <a class="link 8" href="daneDoBazy.html">Dane do bazy</a>
+        <a href="https://yma.herokuapp.com/">Strona główna</a>  |
+        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia">GITHUB</a>  |
+        <a href="pracownicy.php"><img class="obrazek" src="aard.png">Pracownicy</a>  |
+        <a href="pracownicyiorganizacja.php">Prac i Org</a>  |
+        <a href="agregat.php">Funkcje Agregujace</a>  |
+        <a href="dataiczas.php">Data i Czas</a>  |
+        <a href="formularz.html">Formularz</a>  |
+        <a class="link" href="daneDoBazy.html">Dane do bazy</a>
 
         </div>
 
