@@ -1,8 +1,12 @@
 
 
-<?php
-echo("jestes w insert.php");
-echo $_POST['name'];
+    <?php
+    echo("jestes w insert.php <br>");
+    echo "<li>". $_POST['name'];
+    echo "<li>". $_POST['dzial'];
+    echo "<li>". $_POST['zarobki'];
+    echo "<li>". $_POST['data_urodzenia'];
+
 
                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
@@ -14,16 +18,23 @@ echo $_POST['name'];
             
             
             
-            $sql = "INSERT INTO Pracownik (null, $_POST['name'], dzial, zarobki) 
-                   VALUES (null,'Balbina', 1, 76,'1991-11-21')";
-
-            if ($conn->query($sql) === TRUE) {
-              echo "New record created successfully";
-            } else {
-              echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-
-            $conn->close();
+    $sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
+            VALUES (
+              null, 
+              $_POST['name'], 
+              $_POST['dzial'], 
+              $_POST['zarobki'],
+              $_POST['data_urodzenia']
+            ";
 
 
-?>
+      echo "<li>". $sql;
+
+      if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+      } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+      }
+
+      $conn->close();
+      ?>
