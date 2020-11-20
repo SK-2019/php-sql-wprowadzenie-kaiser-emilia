@@ -6,6 +6,8 @@
 
         </head>
 
+
+<div class="con">
         <body background="glownatapeta.png">
         
 <style>
@@ -16,7 +18,7 @@
         }
                 </style>
 
-
+<div class="item a">
 
 
             <div class="nav">
@@ -30,7 +32,7 @@
         <a class="link 7" href="formularz.html">Formularz</a>  |
         <a class="link 8" href="daneDoBazy.html">Dane do bazy</a>
 
-
+        </div>
 
 </div>
 
@@ -179,5 +181,5 @@
                          echo("</table>");
 
         ?>
-
-</html>>
+                </div>
+</html>
