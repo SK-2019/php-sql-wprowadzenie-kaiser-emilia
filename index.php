@@ -2,8 +2,7 @@
 <html>
         <head>
         <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Magra' rel='stylesheet'>
-
+        <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
         </head>
 
 
