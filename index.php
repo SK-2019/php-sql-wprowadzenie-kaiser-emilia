@@ -7,7 +7,7 @@
         </head>
 
 
-<div class="con">
+
         <body background="glownatapeta.png">
         
 <style>
@@ -18,7 +18,7 @@
         }
                 </style>
 
-<div class="item a">
+
 
 
             <div class="nav">
@@ -34,7 +34,7 @@
 
         </div>
 
-</div>
+
 
 
 
@@ -181,5 +181,4 @@
                          echo("</table>");
 
         ?>
-                </div>
 </html>
