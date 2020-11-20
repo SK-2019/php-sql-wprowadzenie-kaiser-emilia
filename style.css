@@ -26,8 +26,6 @@ padding: 1rem;
 .link {
 	display: flex;
 
-justify-content: center;
-align-items: center;
 }
 
 a:hover {
