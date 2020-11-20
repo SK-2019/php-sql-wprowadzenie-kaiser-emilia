@@ -8,15 +8,6 @@
         <head>
         <link rel="stylesheet" href="style.css">
         </head>
-<body>
-<form action="insert.php" method="POST">
-	<input type="text" name="name" placeholder="Imie"></br>
-	<input type="text" number="dzial" placeholder="Dział"></br>
-	<input type="text" number="zarobki" placeholder="Zarobki"></br>
-	<input type="text" date="data_urodzenia" placeholder="Data urodzenia"></br>
-	<input type="submit" value="wyślij do insert.php">
-</form>
-</body>
 
 <body background="tapetaformularz2.png">
 
@@ -27,5 +18,19 @@
           background-size: cover;
 
                 }
+	</style>	
 
+
+<body>
+<form action="strona.php" method="POST">
+	<input type="text" name="firstname" placeholder="Imie"></br>
+	<input type="text" name="lastname" placeholder="Nazwisko"></br>
+	<input type="text" name="city" placeholder="Miasto"></br>
+	<input type="text" name="phone" placeholder="Numer tel"></br>
+	<input type="text" name="poscode" placeholder="Kod pocztowy"></br>
+	<input type="submit" value="wyślij do strona.php">
+</form>
+</body>
+
+	
 </html>
