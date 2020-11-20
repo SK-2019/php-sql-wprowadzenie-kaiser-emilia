@@ -9,18 +9,18 @@
 
 
             
-    $sql = "INSERT INTO pracownicy (null, name, dzial,zarobki,data_urodzenia)
-            VALUES (
-              null, 
-              $_POST['name'], 
-              $_POST['dzial'], 
-              $_POST['zarobki'],
-              $_POST['data_urodzenia']
-            )";
+//     $sql = "INSERT INTO pracownicy (null, name, dzial,zarobki,data_urodzenia)
+//             VALUES (
+//               null, 
+//               $_POST['name'], 
+//               $_POST['dzial'], 
+//               $_POST['zarobki'],
+//               $_POST['data_urodzenia']
+//             )";
 
- $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
-                $result=$conn->query($sql);
-                include("connect.php"); 
+//  $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+//                 $result=$conn->query($sql);
+//                 include("connect.php"); 
 
 
 //       echo "<li>". $sql;
