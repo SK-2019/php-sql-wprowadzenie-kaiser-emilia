@@ -10,8 +10,10 @@
         
 <style>
         body{
-            background-image:url(https://mocah.org/uploads/posts/4563940-geralt-of-rivia-the-witcher-3-wild-hunt-looking-into-the-distance.jpg);          background-repeat: no-repeat;
+            background-image:url(https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_pl_wallpaper_wiedzmin_3_dziki_gon_geralt_i_trofea_1920x1080_1449484775.png);          
+            background-repeat: no-repeat;
           background-attachment: fixed;
+          background-size: cover;
 
         }
                 </style>
