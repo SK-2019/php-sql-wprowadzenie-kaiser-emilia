@@ -18,14 +18,13 @@
         </div>
 
 
-
-
-        <body background="funagr.png">
         
 <style>
         body{
+          background-image:url(https://mocah.org/uploads/posts/4563940-geralt-of-rivia-the-witcher-3-wild-hunt-looking-into-the-distance.jpg);
           background-repeat: no-repeat;
           background-attachment: fixed;
+          background-size: cover;
 
         }
                 </style>

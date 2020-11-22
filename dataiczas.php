@@ -18,10 +18,9 @@
         </div>
 
 
-<body background="dataiczas.png">
-
         <style>
                 body {
+          background-image:url(https://images2.alphacoders.com/106/thumb-1920-1066360.jpg);
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;

@@ -20,10 +20,10 @@
 </html> 
 
 
-        <body background="stronatapeta.png">
         
 <style>
         body{
+          background-image:url(https://images6.alphacoders.com/548/thumb-1920-548302.jpg);     
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;

@@ -20,10 +20,10 @@
 
 
 
-        <body background="pracownicy.png">
         
 <style>
         body{
+            background-image:url(http://fanaru.com/the-witcher/image/265294-the-witcher-witcher-fan-art-by-rein.jpg);
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
