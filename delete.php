@@ -25,5 +25,5 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-header("location: http://127.0.0.1/szkola/daneDoBazy.html");
+header("location: https://yma.herokuapp.com/daneDoBazy.html");
 ?>
