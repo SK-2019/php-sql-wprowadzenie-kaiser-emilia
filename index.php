@@ -40,12 +40,13 @@
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
                 echo("<h2>Zadanie 1</h2>");
-                $sql = ("SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
+                $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
                 $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
                 include("connect.php");
                         echo("<table border=1>");
+                        echo("<th>id_pracownicy</th>");
                         echo("<th>imie</th>");
                         echo("<th>zarobki</th>");
                         echo("<th>data_urodzenia</th>");
@@ -53,7 +54,7 @@
 
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
-                                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");

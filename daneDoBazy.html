@@ -11,7 +11,7 @@
 
 
             <div class="nav">
-        <a class="link a" href="https://yma.herokuapp.com/"><img class="obrazek" src="igni.png">Strona główna<img class="obrazek" src="igni.png"></a>  
+        <a class="link a" href="index.php"><img class="obrazek" src="igni.png">Strona główna<img class="obrazek" src="igni.png"></a>  
         <a class="link b" href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia"><img class="obrazek" src="aksji.png">GITHUB<img class="obrazek" src="aksji.png"></a>  
         <a class="link c" href="pracownicy.php"><img class="obrazek" src="aard.png"> Pracownicy <img class="obrazek" src="aard.png"></a>  
         <a class="link d" href="pracownicyiorganizacja.php"><img class="obrazek" src="quen.png">Prac i Org<img class="obrazek" src="quen.png"></a>  
@@ -43,6 +43,15 @@
 	<input type="date" name="data_urodzenia" placeholder="Data urodzenia"></br>
 	<input type="submit" value="wyślij do insert.php">
 </form>
+
+<h3>usuwanie pracownika</h3>
+<form action="delete.php" method="POST">
+   <input type="number" name="id"></br>
+   <input type="submit" value="Usuń pracownika">
+</form>
+
+
+
 </body>
 
 	

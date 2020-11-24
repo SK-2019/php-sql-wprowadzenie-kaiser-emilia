@@ -39,12 +39,7 @@ echo "<li>". $_POST['zarobki'];
 echo "<li>". $_POST['data_urodzenia'];
 
 
-$servername = "remotemysql.com";
-$username = "gQvQ0qIoDC";
-$password = "4HAPys5ynL";
-$dbname = "gQvQ0qIoDC";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once("connect.php");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -63,4 +58,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
+header("location: http://127.0.0.1/szkola/daneDoBazy.html");
+
 ?>
