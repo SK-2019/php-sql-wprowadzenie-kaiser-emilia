@@ -72,7 +72,19 @@ $result=$conn->query($sql);
 
     while($row=$result->fetch_assoc()) {
             echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["data_urodzenia"]."</td><td>asd</td>");
+                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["data_urodzenia"]."</td>
+		
+		<td>
+		
+		asd
+		<form action='delete.php' method='POST'>
+   			<input type="number" name="id"></br>
+   			<input type="submit" value="Usuń pracownika">
+		</form>
+		
+		</td>
+		
+		");
             echo("</tr>");
         }
     echo("</table>");
