@@ -59,6 +59,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-header("location: https://yma.herokuapp.com/daneDoBazy.html");
+header("location: https://yma.herokuapp.com/daneDoBazy.php");
 
 ?>
