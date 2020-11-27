@@ -76,10 +76,9 @@ $result=$conn->query($sql);
 		
 		<td>
 		
-		asd
 		<form action='delete.php' method='POST'>
-   			<input type='number' name='id' value='".$row['id_pracownicy']."'></br>
-   			<input type='submit' value='Usuń pracownika'>
+   			<input type='number' name='id' value='".$row['id_pracownicy']."' hidden></br>
+   			<input type='submit' value='Usuń'>
 		</form>
 		
 		</td>
