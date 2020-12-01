@@ -30,6 +30,8 @@
         <a class="link f" href="dataiczas.php"><img class="obrazek" src="igni.png">Data i Czas<img class="obrazek" src="igni.png"></a>  
         <a class="link g" href="formularz.html"><img class="obrazek" src="aksji.png">Formularz<img class="obrazek" src="aksji.png"></a>  
         <a class="link h" href="daneDoBazy.php"><img class="obrazek" src="aard.png">Dane do bazy<img class="obrazek" src="aard.png"></a>
+        <a class="link i" href="ksiazki.php"><img class="obrazek" src="quen.png">Książki<img class="obrazek" src="quen.png"></a>
+
 
         </div>
 
