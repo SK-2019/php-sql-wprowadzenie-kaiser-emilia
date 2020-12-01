@@ -18,6 +18,21 @@ $result=$conn->query($sql);
         echo("</table>");
 
 
+$sql = ("SELECT * from biblAutor");
+echo("<h2>".$sql."</h2>");
+
+$result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>autor</th>");
+
+        while($row=$result->fetch_assoc()) {
+                echo("<tr>");
+                    echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+
 
 
 
