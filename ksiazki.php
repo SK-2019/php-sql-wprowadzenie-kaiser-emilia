@@ -40,7 +40,7 @@ $sql = ("SELECT * from biblTytul");
 echo("<h2>".$sql."</h2>");
 
 $result=$conn->query($sql);
-        <select name="tytul" id="tytul">
+        echo("<select name='tytul' id='tytul'>");
 
         while($row=$result->fetch_assoc()) {
                 echo("<tr>");
