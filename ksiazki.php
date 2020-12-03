@@ -43,11 +43,12 @@ $result=$conn->query($sql);
         echo("<select name='tytul' id='tytul'>");
 
         while($row=$result->fetch_assoc()) {
-                echo("<tr>");
+               
                     echo("<option value=".$row['tytul'].">".$row["tytul"]."</option>");
-                echo("</tr>");
+                    echo("<input type='Submit' value='Sumbit'><br>");
+               
             }
-        echo("</table>");
+        echo("</select>");
 
 
 $sql = ("SELECT * from biblAutor");
