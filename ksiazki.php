@@ -47,7 +47,7 @@ $result=$conn->query($sql);
                     echo("<option value=".$row['tytul'].">".$row["tytul"]."</option>")}
                     echo("<input type='Submit' value='Sumbit'><br>");
                
-            }
+            
         echo("</select>");
 
 
