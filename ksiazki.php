@@ -44,7 +44,7 @@ $result=$conn->query($sql);
 
         while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    <option value=.$row["tytul"].>.$row["tytul"].</option>;
+                    echo("<option value=.$row["tytul"].>.$row["tytul"].</option>");
                 echo("</tr>");
             }
         echo("</table>");
