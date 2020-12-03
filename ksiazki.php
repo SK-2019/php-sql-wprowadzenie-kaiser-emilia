@@ -40,13 +40,11 @@ $sql = ("SELECT * from biblTytul");
 echo("<h2>".$sql."</h2>");
 
 $result=$conn->query($sql);
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>tytul</th>");
+        <select name="tytul" id="tytul">
 
         while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["tytul_id"]."</td><td>".$row["tytul"]."</td>");
+                    <option value=.$row["tytul"].>.$row["tytul"].</option>;
                 echo("</tr>");
             }
         echo("</table>");
