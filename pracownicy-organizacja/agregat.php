@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
         <head>
-        <link rel="stylesheet" href="/inne/style.css">
+        <link rel="stylesheet" href="/assets/style.css">
         </head>
 
 
