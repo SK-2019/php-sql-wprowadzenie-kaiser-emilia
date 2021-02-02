@@ -3,6 +3,7 @@
         <head>
         <link rel="stylesheet" href="/assets/style.css">
         <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+        <link rel="shortcut icon" href="/favicon.ico"/>
         </head>
 
 
