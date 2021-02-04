@@ -38,7 +38,7 @@
 
 
 
-
+<div class="con">
 
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
@@ -184,4 +184,5 @@
                          echo("</table>");
 
         ?>
+        </div>
 </html>
