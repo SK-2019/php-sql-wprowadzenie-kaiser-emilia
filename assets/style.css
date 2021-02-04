@@ -16,7 +16,6 @@ li {
 
 
 .link{
-    position: left;
     text-decoration: none;
 	height: 50px;
 	width: 220px;	
@@ -31,8 +30,9 @@ li {
 
 
 .nav {
-	display: flex;
-	justify-content: space-around;
+	position: fixed;
+	height: 100%;
+	width: 250px;
 	
 }
 
