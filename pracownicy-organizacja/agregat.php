@@ -2,6 +2,7 @@
 <html>
         <head>
         <link rel="stylesheet" href="/assets/style.css">
+        <link rel="shortcut icon" href="/inne/favicon.ico">
         </head>
 
 
@@ -31,7 +32,7 @@
         }
                 </style>
 
-
+<div class="con">
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
 
@@ -296,3 +297,4 @@
   
   
           ?>
+          </div>

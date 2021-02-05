@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/inne/favicon.ico">
   <title>Prosty Formularz</title>
 </head>
         <head>
@@ -11,7 +12,7 @@
 
 
             <div class="nav">
-        <a class="link a" href="https://yma.herokuapp.com/"><img class="obrazek" src="/inne/igni.png">Strona główna<img class="obrazek" src="/inne/igni.png"></a>  
+            <a class="link a" href="index.php"><img class="obrazek" src="/inne/igni.png">Strona główna<img class="obrazek" src="/inne/igni.png"></a>  
         <a class="link b" href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia"><img class="obrazek" src="/inne/aksji.png">GITHUB<img class="obrazek" src="/inne/aksji.png"></a>  
         <a class="link c" href="/pracownicy-organizacja/pracownicy.php"><img class="obrazek" src="/inne/aard.png"> Pracownicy <img class="obrazek" src="/inne/aard.png"></a>  
         <a class="link d" href="/pracownicy-organizacja/pracownicyiorganizacja.php"><img class="obrazek" src="/inne/quen.png">Prac i Org<img class="obrazek" src="/inne/quen.png"></a>  
@@ -39,6 +40,8 @@
 
 <body>
 
+<div class="con">
+
 <form action="insert.php" method="POST">
 	<input type="text" name="name" placeholder="Imie"></br>
 	<input type="number" name="dzial" placeholder="Dział"></br>
@@ -60,6 +63,7 @@
 
 
 <?php
+
 
 require_once("connect.php");
 
@@ -95,5 +99,7 @@ $result=$conn->query($sql);
 
 
 ?>
+
+</div>
 	
 </html>
