@@ -42,6 +42,13 @@
 <div class="con">
 
         <?php
+        
+        echo("<li> SERVER password: ".$password['password']);
+        echo("<li> SERVER username: ".$username['username']);
+        echo("<li> SERVER name: ".$servername['servername']);
+        echo("<li> SERVER dbname: ".$dbname['dbname']);
+        
+        
                 echo("<h1>Emilia Kaiser</h1>");
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
