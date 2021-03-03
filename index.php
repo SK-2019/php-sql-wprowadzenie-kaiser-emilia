@@ -49,6 +49,7 @@
                 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
                 include("connect.php");
+                $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
                 include("connect.php");
                         echo("<table border=1>");
