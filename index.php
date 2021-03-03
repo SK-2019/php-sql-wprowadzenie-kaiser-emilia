@@ -51,7 +51,6 @@
                 include("connect.php");
                 $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
-                include("connect.php");
                         echo("<table border=1>");
                         echo("<th>id_pracownicy</th>");
                         echo("<th>imie</th>");
@@ -70,7 +69,7 @@
                 echo("<h2>Zadanie 2</h2>");
                 $sql = ("SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a')");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
                        echo("<table border=1>");
                         echo("<th>imie</th>");
@@ -89,7 +88,7 @@
                 echo("<h2>Zadanie 3</h2>");
                 $sql = ("SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a') and (dzial = 2)");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
                        echo("<table border=1>");
                         echo("<th>imie</th>");
@@ -108,7 +107,7 @@
                 echo("<h2>Zadanie 4</h2>");
                 $sql = ("SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a') and (dzial = 2 or dzial =3)");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
                        echo("<table border=1>");
                         echo("<th>imie</th>");
@@ -127,7 +126,7 @@
                 echo("<h2>Zadanie 5</h2>");
                 $sql = ("SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a') and (dzial = 1)");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
                        echo("<table border=1>");
                         echo("<th>imie</th>");
@@ -145,7 +144,7 @@
                   echo("<h2>Zadanie 6</h2>");
                   $sql = ("SELECT avg(zarobki) as srednia_zarobkow FROM pracownicy, organizacja where dzial=id_org");
                   echo("<h2>".$sql."</h2>");
-                  $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                  $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                   $result=$conn->query($sql);
                          echo("<table border=1>");
                          echo("<th>srednia_zarobkow</th>");
@@ -160,7 +159,7 @@
                    echo("<h2>Zadanie 7</h2>");
                   $sql = ("SELECT count(imie) as liczba_kobiet FROM pracownicy, organizacja where dzial=id_org and imie like '%a'");
                   echo("<h2>".$sql."</h2>");
-                  $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                  $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                   $result=$conn->query($sql);
                          echo("<table border=1>");
                          echo("<th>liczba_kobiet</th>");
@@ -175,7 +174,7 @@
                   echo("<h2>Zadanie 8</h2>");
                   $sql = ("SELECT sum(zarobki) as suma_zarobkow FROM pracownicy, organizacja where dzial=id_org");
                   echo("<h2>".$sql."</h2>");
-                  $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                  $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                   $result=$conn->query($sql);
                          echo("<table border=1>");
                          echo("<th>suma_zarobkow</th>");
