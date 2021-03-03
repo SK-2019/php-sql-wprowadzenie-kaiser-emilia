@@ -48,7 +48,7 @@
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                include("connect.php");
                 $result=$conn->query($sql);
                 include("connect.php");
                         echo("<table border=1>");
