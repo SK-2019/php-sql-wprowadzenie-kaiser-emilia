@@ -39,7 +39,7 @@
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT sum(zarobki) as suma_zarobki FROM pracownicy");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                require_once("../assets/connect.php");
                 $result=$conn->query($sql);
                 include("connect.php");
                         echo("<table border=1>");
