@@ -42,8 +42,9 @@
 <div class="con">
 
         <?php
-        echo("test");
-        echo("Data i czas: ".date("Y-m-d h:i:sa", $d));
+        //echo("test");
+        $d=strtotime("now");
+          echo date("Y-m-d h:i:sa", $d) . "<br>";
                 echo("<h1>Emilia Kaiser</h1>");
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
