@@ -39,7 +39,7 @@
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT sum(zarobki) as suma_zarobki FROM pracownicy");
                 echo("<h2>".$sql."</h2>");
-                require_once("../assets/connect.php");
+                require_once("../connect.php");
                 $result=$conn->query($sql);
                 include("connect.php");
                         echo("<table border=1>");
