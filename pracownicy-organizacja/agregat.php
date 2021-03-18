@@ -41,7 +41,6 @@
                 echo("<h2>".$sql."</h2>");
                 require_once("../connect.php");
                 $result=$conn->query($sql);
-                include("connect.php");
                         echo("<table border=1>");
                         echo("<th>suma_zarobki</th>");
 
