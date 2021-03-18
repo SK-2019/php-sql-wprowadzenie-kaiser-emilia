@@ -47,11 +47,11 @@
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
-                //require_once("connect.php");
+                require_once("/connect.php");
             
                 
                 //$conn = new mysqli($servername, $username, $password, $dbname);                
-                $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
+                //$conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<th>id_pracownicy</th>");
