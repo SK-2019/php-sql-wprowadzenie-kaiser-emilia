@@ -47,7 +47,7 @@
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
-                require_once("../assets/connect.php");
+                require_once("..assets/connect.php");
                 
                 
                 //$conn = new mysqli($servername, $username, $password, $dbname);                
