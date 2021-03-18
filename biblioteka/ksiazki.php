@@ -35,7 +35,7 @@
 
 <?php
 
-require_once("connect.php");
+require_once("../connect.php");
 
 $sql = ("SELECT * from biblTytul");
 echo("<h2>".$sql."</h2>");

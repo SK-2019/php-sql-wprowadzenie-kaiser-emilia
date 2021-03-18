@@ -36,7 +36,7 @@
 <div class="con">
   
 <?php
-include("connect.php");
+require_once("../connect.php");
 echo("<li> imie: ".$_POST['firstname']."</li>");
 echo("<li> nazwisko: ".$_POST['lastname']."</li>");
 echo("<li> miasto: ".$_POST['city']."</li>");
