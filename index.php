@@ -48,7 +48,12 @@
                 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
                 include("connect.php");
-                $conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
+                $servername = "db";
+                $username = "root";
+                $password = "root";
+                $dbname = "pracownicy";
+                
+                $conn = new mysqli($servername, $username, $password, $dbname);                //$conn=new mysqli($_SERVER['servername'], $_SERVER['username'], $_SERVER['password'], $_SERVER['dbname']);
                 $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<th>id_pracownicy</th>");
