@@ -42,7 +42,7 @@
 <div class="con">
 
         <?php
-        //echo("test");
+        echo("test");
         $d=strtotime("now");
           echo date("Y-m-d h:i:sa", $d) . "<br>";
                 echo("<h1>Emilia Kaiser</h1>");
