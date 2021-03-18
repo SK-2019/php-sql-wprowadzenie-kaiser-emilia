@@ -43,9 +43,8 @@
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT imie, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                require_once("../connect.php");
                 $result=$conn->query($sql);
-                include("connect.php");
                         echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>nazwa_dzial</th>");
@@ -61,9 +60,7 @@
                 echo("<h2>Zadanie 2</h2>");
                 $sql = ("SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (dzial=1 or dzial=4)");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                         echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>zarobki</th>");
@@ -81,9 +78,7 @@
                 echo("<h2>Zadanie 3</h2>");
                 $sql = ("SELECT imie, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a')");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                         echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>nazwa_dzial</th>");
@@ -99,9 +94,7 @@
                 echo("<h2>Zadanie 4</h2>");
                 $sql = ("SELECT imie, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie not like '%a')");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                         echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>nazwa_dzial</th>");
@@ -116,9 +109,7 @@
                 echo("<h2>Zadanie 5</h2>");
                 $sql = ("SELECT imie, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) order by imie desc");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                       echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>nazwa_dzial</th>");
@@ -133,9 +124,7 @@
                 echo("<h2>Zadanie 6</h2>");
                 $sql = ("SELECT imie, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (dzial=3) order by imie asc");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                        echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>nazwa_dzial</th>");
@@ -150,9 +139,7 @@
                 echo("<h2>Zadanie 7</h2>");
               $sql = ("SELECT imie, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a') order by imie asc");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                        echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>nazwa_dzial</th>");
@@ -168,9 +155,7 @@
                 echo("<h2>Zadanie 8</h2>");
               $sql = ("SELECT imie, zarobki, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie like '%a') and (dzial=1 or dzial=3) order by zarobki asc");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                        echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>zarobki</th>");
@@ -186,9 +171,7 @@
                 echo("<h2>Zadanie 9</h2>");
               $sql = ("SELECT imie, zarobki, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) and (imie not like '%a') order by nazwa_dzial asc, zarobki asc");
                 echo("<h2>".$sql."</h2>");
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
                 $result=$conn->query($sql);
-                include("connect.php");
                        echo("<table border=1>");
                         echo("<th>imie</th>");
                         echo("<th>zarobki</th>");
