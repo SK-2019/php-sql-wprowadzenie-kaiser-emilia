@@ -24,6 +24,7 @@ li {
 	padding-left: 140px;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 75px;
+	transition: 0.3s;
 }
 
 .link{
