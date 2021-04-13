@@ -1,0 +1,115 @@
+.cont {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+}
+
+.nav {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.cont2 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cont3 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cont4 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.cont5 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.cont6 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont7 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cont8 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+}
+
+.cont9 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.cont10 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont11 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cont12 {
+    background-color: rgb(213, 84, 84);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+}
