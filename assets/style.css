@@ -150,6 +150,108 @@ h2 {
 
 }
 
+containerglow2 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerglow3 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.containerglow4 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.containerglow5 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerglow6 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerglow7 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.containerglow8 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+}
+
+.containerglow9 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerglow10 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerglow11 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.containerglow12 {
+    background-color: orange;
+    width: 70%;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+}
+
 // #cc99ff fioletowy
 // #00b386 niebieski
 // #e6ccff jasny fioletowy
