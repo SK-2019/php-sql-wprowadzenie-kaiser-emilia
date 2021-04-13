@@ -12,8 +12,8 @@
 }
 .item{
     display:flex;
-    width:400px;
-    height:400px;
+    width:200px;
+    height:150px;
     background:rgb(255, 153, 153);
 }
 .kwa{
