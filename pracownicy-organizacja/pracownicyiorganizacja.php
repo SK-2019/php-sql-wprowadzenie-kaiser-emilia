@@ -39,11 +39,12 @@
 
 
        <?php
+
+            require_once("../connect.php");
                 echo("<h1>Pracownicy i Organizacja</h1>");
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT imie, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
                 echo("<h2>".$sql."</h2>");
-                require_once("../connect.php");
                 $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<th>imie</th>");

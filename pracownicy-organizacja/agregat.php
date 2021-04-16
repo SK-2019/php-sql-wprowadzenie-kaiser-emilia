@@ -36,11 +36,14 @@
         <?php
                 echo("<h1>Emilia Kaiser</h1>");
 
+                require_once("../connect.php");
+
+
                 echo("<h2>Zadanie 1</h2>");
                 $sql = ("SELECT sum(zarobki) as suma_zarobki FROM pracownicy");
                 echo("<h2>".$sql."</h2>");
-                require_once("../connect.php");
                 $result=$conn->query($sql);
+                
                         echo("<table border=1>");
                         echo("<th>suma_zarobki</th>");
 

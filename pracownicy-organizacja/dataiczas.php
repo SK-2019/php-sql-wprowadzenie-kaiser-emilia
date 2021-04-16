@@ -34,10 +34,11 @@
 
         <?php
 
+
+                require_once("../connect.php");
                 echo("<h1>Zadanie 1 - Wiek poszczególnych pracowników (w latach) </h1>");
                 $sql = ("SELECT * , nazwa_dzial, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja where id_org=dzial;");
                 echo("<h2>".$sql."</h2>");
-                require_once("../connect.php");
                 $result=$conn->query($sql);
                         echo("<table border=1>");
                         echo("<th>id_pracownicy</th>");
