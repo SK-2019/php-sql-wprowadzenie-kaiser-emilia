@@ -33,7 +33,9 @@
         <a class="link g" href="/dane-do-bazy/formularz.html"><img class="obrazek" src="/inne/aksji.png">Formularz<img class="obrazek" src="/inne/aksji.png"></a>  
         <a class="link h" href="/dane-do-bazy/daneDoBazy.php"><img class="obrazek" src="/inne/aard.png">Dane do bazy<img class="obrazek" src="/inne/aard.png"></a>
         <a class="link i" href="/biblioteka/ksiazki.php"><img class="obrazek" src="/inne/quen.png">Książki<img class="obrazek" src="/inne/quen.png"></a>
-        <a class="link i" href="/flexbox/index.html"><img class="obrazek" src="/inne/yrden.png">Flexbox<img class="obrazek" src="/inne/yrden.png"></a>
+        <a class="link j" href="/flexbox/index.html"><img class="obrazek" src="/inne/yrden.png">Flexbox<img class="obrazek" src="/inne/yrden.png"></a>
+        <a class="link k" href="/biblioteka/wieledowielu.php"><img class="obrazek" src="/inne/igni.png">Wiele do wielu<img class="obrazek" src="/inne/igni.png"></a>
+
 
 
         </div>
