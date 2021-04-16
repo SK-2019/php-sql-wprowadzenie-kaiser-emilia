@@ -24,11 +24,10 @@
 
                 echo("<h2>Zadanie 1</h2>");
 
-                require_once("../assets/connect.php");
+                require_once("../connect.php");
 
                 $sql = ("SELECT * FROM autor, tytul, autor_tytul  where autor_id = autor.id and tytul_id = tytul.id");
                 echo("<h2>".$sql."</h2>");
-                require_once("../assets/connect.php");
                 $result=$conn->query($sql);
                 
                         echo("<table border=1>");
