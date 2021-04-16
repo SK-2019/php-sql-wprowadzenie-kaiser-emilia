@@ -25,7 +25,10 @@ li {
     align-items: center;
     display: flex;
 	justify-content: center;
-
+	border-radius: 11px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 
