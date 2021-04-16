@@ -68,7 +68,7 @@
 require_once("../connect.php");
 
 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
-$result=$conn->query($sql) or die ($conn->error);
+$result=$conn->query($sql);
     echo("<table border=1>");
     echo("<th>id_pracownicy</th>");
     echo("<th>imie</th>");
