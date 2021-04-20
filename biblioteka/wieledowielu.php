@@ -19,6 +19,17 @@
                 </style>
 
 
+                <div class="nav">
+    <?php
+include("../assets/menu.php");
+?>
+</div>
+
+                <div class="notion">
+<a href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion</a>
+    </div>
+
+<div class="con">
 <?php
                 echo("<h1>Emilia Kaiser</h1>");
 
@@ -44,3 +55,4 @@
 
 
                         ?>
+</div>

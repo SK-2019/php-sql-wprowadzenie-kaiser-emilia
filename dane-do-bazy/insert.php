@@ -15,7 +15,7 @@ background-image:url(https://images5.alphacoders.com/527/thumb-1920-527773.png);
 
 </html>
             <div class="nav">
-        <a class="link a" href="/index.php"><img class="obrazek" src="igni.png">Strona główna<img class="obrazek" src="igni.png"></a>  
+        <a class="link a" href="https://yma.herokuapp.com/"><img class="obrazek" src="igni.png">Strona główna<img class="obrazek" src="igni.png"></a>  
         <a class="link b" href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia"><img class="obrazek" src="aksji.png">GITHUB<img class="obrazek" src="aksji.png"></a>  
         <a class="link c" href="pracownicy.php"><img class="obrazek" src="aard.png"> Pracownicy <img class="obrazek" src="aard.png"></a>  
         <a class="link d" href="pracownicyiorganizacja.php"><img class="obrazek" src="quen.png">Prac i Org<img class="obrazek" src="quen.png"></a>  
@@ -39,7 +39,7 @@ echo "<li>". $_POST['zarobki'];
 echo "<li>". $_POST['data_urodzenia'];
 
 
-require_once("../connect.php");
+require_once("connect.php");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -59,6 +59,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-header("location: /daneDoBazy.php");
+header("location: https://yma.herokuapp.com/daneDoBazy.php");
 
 ?>
