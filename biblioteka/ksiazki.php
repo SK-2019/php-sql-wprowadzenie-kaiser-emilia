@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/inne/favicon.ico">
-    <title>Książki</title>
+ 
 </head>
 <style>
         body{
@@ -18,9 +18,12 @@
                 </style>
 
 <div class="nav">
+
     <?php
-include("../assets/menu.php");
-?>
+        include("../assets/header.php");
+        include("../assets/menu.php");
+    ?>
+
 </div>
 
            

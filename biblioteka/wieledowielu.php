@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/inne/favicon.ico">
-    <title>Wiele do wielu</title>
 </head>
 
 <style>
@@ -19,15 +18,14 @@
                 </style>
 
 
-                <div class="nav">
-    <?php
-include("../assets/menu.php");
-?>
-</div>
+<div class="nav">
 
-                <div class="notion">
-<a href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion</a>
-    </div>
+    <?php
+        include("../assets/header.php");
+        include("../assets/menu.php");
+    ?>
+
+</div>
 
 <div class="con">
 <?php

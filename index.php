@@ -4,8 +4,6 @@
         <link rel="stylesheet" href="/assets/style.css">
         <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
         <link rel="shortcut icon" href="/inne/favicon.ico">
-        <title>Emilia Kaiser</title>
-
         </head>
 
 
@@ -23,13 +21,10 @@
 
 
 
-            
-<div class="notion">
-<a href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion</a>
-    </div>
 
 <div class="nav">
     <?php
+    include("assets/header.php");
 include("assets/menu.php");
 ?>
 </div>

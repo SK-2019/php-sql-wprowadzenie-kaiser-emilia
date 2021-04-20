@@ -18,14 +18,15 @@
                 }
         </style>
 
-<div class="notion">
-<a href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion</a>
-    </div>
 
-    <div class="nav">
+
+<div class="nav">
+
     <?php
-include("../assets/menu.php");
-?>
+        include("../assets/header.php");
+        include("../assets/menu.php");
+    ?>
+
 </div>
 
 

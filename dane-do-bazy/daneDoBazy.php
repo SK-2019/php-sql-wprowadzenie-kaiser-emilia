@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/inne/favicon.ico">
-  <title>Prosty Formularz</title>
 </head>
         <head>
         <link rel="stylesheet" href="/assets/style.css">
@@ -24,16 +23,15 @@
 
                 }
 	</style>	
-    <div class="notion">
-<a href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion</a>
-    </div>
 
-    <div class="nav">
+<div class="nav">
+
     <?php
-include("../assets/menu.php");
-?>
-</div>
+        include("../assets/header.php");
+        include("../assets/menu.php");
+    ?>
 
+</div>
 
 <body>
 
