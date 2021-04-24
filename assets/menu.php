@@ -11,10 +11,10 @@
   <div class="subnav">
     <button class="link c">Pracownicy i organizacja <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="/pracownicy-organizacja/pracownicy.php">Pracownicy</a>
-      <a href="/pracownicy-organizacja/pracownicyiorganizacja.php">PracOrg</a>
-      <a href="/pracownicy-organizacja/agregat.php">Funkcje agregujące</a>
-      <a href="/pracownicy-organizacja/dataiczas.php">Data i czas</a>
+      <a class="link a" href="/pracownicy-organizacja/pracownicy.php">Pracownicy</a>
+      <a class="link a" href="/pracownicy-organizacja/pracownicyiorganizacja.php">PracOrg</a>
+      <a class="link a" href="/pracownicy-organizacja/agregat.php">Funkcje agregujące</a>
+      <a class="link a" href="/pracownicy-organizacja/dataiczas.php">Data i czas</a>
     </div>
   </div>
   <div class="subnav">
