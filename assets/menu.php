@@ -11,14 +11,14 @@
   <div class="subnav">
     <button class="link c">Pracownicy i organizacja <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a class="link a" href="/pracownicy-organizacja/pracownicy.php">Pracownicy</a>
-      <a class="link a" href="/pracownicy-organizacja/pracownicyiorganizacja.php">PracOrg</a>
-      <a class="link a" href="/pracownicy-organizacja/agregat.php">Funkcje agregujące</a>
-      <a class="link a" href="/pracownicy-organizacja/dataiczas.php">Data i czas</a>
+      <a class="linki" href="/pracownicy-organizacja/pracownicy.php">Pracownicy</a>
+      <a class="linki" href="/pracownicy-organizacja/pracownicyiorganizacja.php">PracOrg</a>
+      <a class="linki" href="/pracownicy-organizacja/agregat.php">Funkcje agregujące</a>
+      <a class="linki" href="/pracownicy-organizacja/dataiczas.php">Data i czas</a>
     </div>
   </div>
   <div class="subnav">
-    <button class="link d">Dane do bazy <i class="fa fa-caret-down"></i></button>
+    <button class="lin h">Dane do bazy <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
       <a href="/dane-do-bazy/formularz.php">Formularz</a>
       <a href="/dane-do-bazy/daneDoBazy.php">Dane do bazy</a>

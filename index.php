@@ -22,12 +22,12 @@
 
 
 
-<div class="nav">
+
     <?php
     include("assets/header.php");
 include("assets/menu.php");
 ?>
-</div>
+
        
 
 
