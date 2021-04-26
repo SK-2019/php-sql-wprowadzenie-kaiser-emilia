@@ -9,7 +9,7 @@
 
 <style>
         body{
-            background-image:url(https://preview.redd.it/qb2jre5sfmx01.png?auto=webp&s=11cb1b966f18f8c81356ed18be5f18c68a95c764);          
+            background-image:url(https://images4.alphacoders.com/711/thumb-1920-711124.jpg);          
             background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
