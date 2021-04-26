@@ -34,7 +34,7 @@ li {
 	margin-bottom: 10px;
 }
 
-.subnavbtn{
+/* .subnavbtn{
   float: left;
     text-decoration: none;
 	height: 45px;
@@ -71,7 +71,8 @@ li {
 .subnav {
   float: left;
   overflow: hidden;
-}
+} */
+
 
 .nav {
   overflow: hidden;
@@ -83,9 +84,9 @@ li {
 	
 }
 
-.subnav-content:hover {
+/* .subnav-content:hover {
   background-color: rgb(255, 255, 255, 0.3);
-  }
+  } */
 
 .link:hover {
   background-color: rgb(255, 255, 255, 0.3);
