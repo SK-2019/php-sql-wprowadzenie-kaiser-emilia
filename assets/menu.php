@@ -1,5 +1,5 @@
 
-
+<div class="nav">
 <a class="link a" href="https://github.com/SK-2019/php-sql-wprowadzenie-kaiser-emilia"><img class="obrazek" src="/inne/igni.png">GITHUB<img class="obrazek" src="/inne/igni.png"></a>
         <a class="link b" href="/index.php"><img class="obrazek" src="/inne/aksji.png">Strona główna<img class="obrazek" src="/inne/aksji.png"></a>    
         <a class="link c" href="/pracownicy-organizacja/pracownicy.php"><img class="obrazek" src="/inne/aard.png"> Pracownicy <img class="obrazek" src="/inne/aard.png"></a>  
@@ -10,10 +10,14 @@
         <a class="link h" href="/dane-do-bazy/daneDoBazy.php"><img class="obrazek" src="/inne/aard.png">Dane do bazy<img class="obrazek" src="/inne/aard.png"></a>
         <a class="link i" href="/biblioteka/ksiazki.php"><img class="obrazek" src="/inne/quen.png">Książki<img class="obrazek" src="/inne/quen.png"></a>
         <a class="link j" href="/flexbox/index.html"><img class="obrazek" src="/inne/yrden.png">Flexbox<img class="obrazek" src="/inne/yrden.png"></a>
-        <a class="link k" href="/biblioteka/wieledowielu.php"><img class="obrazek" src="/inne/igni.png">Wiele do wielu<img class="obrazek" src="/inne/igni.png"></a>
-        <a class="link l" href="/biblioteka/autor-tytul.php"><img class="obrazek" src="/inne/aksji.png">autor - tytuł<img class="obrazek" src="/inne/aksji.png"></a>
-        <a class="link m" href="/biblioteka/nauczyciel-klasa.php"><img class="obrazek" src="/inne/aard.png">Wiele do wielu<img class="obrazek" src="/inne/aard.png"></a>
-        <a class="link n" href="/biblioteka/lekarz-pacjent.php"><img class="obrazek" src="/inne/quen.png">Wiele do wielu<img class="obrazek" src="/inne/quen.png"></a>
+        <a class="link k" href="/relacje/biblioteka.php"><img class="obrazek" src="/inne/igni.png">Biblioteka<img class="obrazek" src="/inne/igni.png"></a>
+        <a class="link l" href="/relacje/szkola.php"><img class="obrazek" src="/inne/aksji.png">Szkoła<img class="obrazek" src="/inne/aksji.png"></a>
+        <a class="link m" href="/relacje/przychodnia.php"><img class="obrazek" src="/inne/aard.png">Przychodnia<img class="obrazek" src="/inne/aard.png"></a>
+        <a class="link n" href="/relacje/SPA.php"><img class="obrazek" src="/inne/quen.png">SPA<img class="obrazek" src="/inne/quen.png"></a>
+        <a class="link n" href="/relacje/sklep.php"><img class="obrazek" src="/inne/yrden.png">Sklep<img class="obrazek" src="/inne/yrden.png"></a>
+
+
+</div>
   
 
 
