@@ -12,6 +12,7 @@
 <style>
         body{
             background-image:url(https://initiate.alphacoders.com/images/714/cropped-1920-1080-714142.jpg?3956);
+                loading: lazy;
           background-repeat: no-repeat;
           background-attachment: fixed;
 
