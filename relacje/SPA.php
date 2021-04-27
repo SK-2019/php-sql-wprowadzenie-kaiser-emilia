@@ -12,6 +12,7 @@
 <style>
         body{
             background-image:url(https://images8.alphacoders.com/542/thumb-1920-542508.jpg);
+                loading: lazy;
           background-repeat: no-repeat;
           background-attachment: fixed;
 
