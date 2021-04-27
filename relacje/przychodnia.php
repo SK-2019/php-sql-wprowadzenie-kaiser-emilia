@@ -9,7 +9,8 @@
 
 <style>
         body{
-            background-image:url(https://images4.alphacoders.com/711/thumb-1920-711124.jpg);          
+            background-image:url(https://images4.alphacoders.com/711/thumb-1920-711124.jpg);     
+            loading: lazy;
             background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
