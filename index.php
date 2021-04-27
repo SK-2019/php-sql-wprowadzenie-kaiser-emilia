@@ -13,6 +13,7 @@
         body{
             background-image:url(https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_pl_wallpaper_wiedzmin_3_dziki_gon_geralt_i_trofea_1920x1080_1449484775.png);          
             background-repeat: no-repeat;
+                loading: lazy;
           background-attachment: fixed;
           background-size: cover;
 
