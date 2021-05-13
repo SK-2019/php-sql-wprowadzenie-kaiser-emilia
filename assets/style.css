@@ -185,3 +185,74 @@ h2 {
 }
 
 
+.gallery {
+  display: flex;
+}
+
+.row {
+  background-color: lightcoral;
+}
+
+.image {
+  text-decoration: none;
+  
+  background-color: lightblue;
+  margin: 5px;
+  padding: 0px;
+  width: 500px;
+  height: 300px;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain, cover; */
+  background-position: center;
+  background-size: cover;
+  transition: 0.51s;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.image:hover {
+  transform: scale(0.98);
+  filter: saturate(2.2) brightness(1.4);
+}
+
+.foto01 {
+  background-image: url("https://images.gram.pl/gallery/kgda20210426143804617gjii.jpg");
+}
+
+.foto02 {
+  background-image: url("https://images.gram.pl/news/urad20210317121014650mfgd.jpg");
+}
+
+.foto03 {
+  background-image: url("https://images.gram.pl/news/eulh20200207115307632debq.jpg");
+}
+
+.foto04 {
+  background-image: url("https://fanbojizycie.files.wordpress.com/2017/12/wiedzmin8.jpg");
+}
+
+.foto05 {
+  background-image: url("https://cont4.naekranie.pl/wp-content/uploads/2018%2F11%2F1-1-4.jpg");
+}
+
+.foto01_title {
+ 
+  background: black;
+  display: block;
+  text-align: center;
+  color: white;
+}
+.foto01_price {
+
+  background-color: black;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+
+
+

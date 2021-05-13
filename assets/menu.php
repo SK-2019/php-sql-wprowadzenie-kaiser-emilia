@@ -10,6 +10,8 @@
         <a class="link h" href="/dane-do-bazy/daneDoBazy.php"><img class="obrazek" src="/inne/aard.png">Dane do bazy<img class="obrazek" src="/inne/aard.png"></a>
         <a class="link i" href="/biblioteka/ksiazki.php"><img class="obrazek" src="/inne/quen.png">Książki<img class="obrazek" src="/inne/quen.png"></a>
         <a class="link j" href="/flexbox/index.html"><img class="obrazek" src="/inne/yrden.png">Flexbox<img class="obrazek" src="/inne/yrden.png"></a>
+        <a class="link j" href="/galeria/galeria.php"><img class="obrazek" src="/inne/yrden.png">Galeria<img class="obrazek" src="/inne/yrden.png"></a>
+
         <h2>Relacje </h2>
         <a class="link k" href="/relacje/biblioteka.php"><img class="obrazek" src="/inne/igni.png">Biblioteka<img class="obrazek" src="/inne/igni.png"></a>
         <a class="link l" href="/relacje/szkola.php"><img class="obrazek" src="/inne/aksji.png">Szkoła<img class="obrazek" src="/inne/aksji.png"></a>
