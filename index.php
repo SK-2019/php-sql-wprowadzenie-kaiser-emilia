@@ -30,7 +30,7 @@ include("assets/menu.php");
 ?>
 
        
-test
+
 
 
 <div class="con">
